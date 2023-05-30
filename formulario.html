@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulario</h1>
+
+    <form action="#" method="POST">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="">Email</label>
+            <input type="email" required>
+
+            <label for="">Numero de filhos</label>
+            <input type="number" min="0" max="10000">
+
+            <br>
+            <label for="">Nascimento</label>
+            <input type="date">
+
+            <p>Sexo</p>
+            <label>
+                <input type="radio" name="sexo" value="M">
+                Masculino
+            </label>
+
+            <label>
+                <input type="radio" name="sexo" value="F">
+                Feminino
+            </label>
+            <br>
+        
+            <label for="">Estado</label>
+            <select name="estado" id="">
+                <option value="0">Selecione</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>
+                Área de interesse</legend>
+
+                <label><input type="checkbox" name="html" value="html">HTML</label>
+                <label><input type="checkbox" name="css" value="css">CSS</label>
+                <label><input type="checkbox" name="js" value="js">JS</label>
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Mensagem</legend>
+            <textarea style="resize:none" name="msg" id="" cols="30" rows="10"></textarea>
+
+            <textarea style="resize:none" name="contrato" id="" cols="30" rows="10" readonly>Aqui entra o texto do contrato</textarea>
+            <br>
+            <label><input type="checkbox">Li e aceito</label>
+        </fieldset>
+
+            <br>
+            <input type="submit" value="mandar">
+        
+    </form>
+</body>
+</html>

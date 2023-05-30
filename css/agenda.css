@@ -1,0 +1,17 @@
+body {
+    background-color: blue;
+}
+
+header {
+    display: flex;
+    
+}
+header, ul,li {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+li {
+    border: 1px red solid;
+    padding: 5px;
+}
